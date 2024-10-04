@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .page1 {
+        /* border:1px solid black; */
+        width: 97vw;
+        height: 60vh;
+        display: flex;
+        flex-wrap: wrap;
+        background-image: url("images/jumbo_background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        /* background-position:center; */
+      }
+      .app {
+        /* border:solid black; */
+        width: 200px;
+        height: 80px;
+
+        color: white;
+        font-size: 70px;
+        font-family: "fira sans", sans-serif;
+        transform: translate(500px, 120px);
+      }
+      .img1 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80px;
+        height: 70px;
+        /* border:solid red; */
+        color: white;
+        transform: translate(500px, 120px);
+      }
+      .name {
+        display: flex;
+        flex-wrap: wrap;
+        color: white;
+        font-family: "fira sans", sans-serif;
+        font-size: 35px;
+        transform: translate(200px, 230px);
+        word-spacing: 5px;
+      }
+      .Text {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 20px;
+        color: white;
+        font-family: "fira sans", sans-serif;
+        transform: translate(-150px, 330px);
+        line-height: 40px;
+        text-align: center;
+      }
+      .Features {
+        /* display: flex;
+        flex-wrap: wrap; */
+        background-color: white;
+        color: black;
+        font-family: "fira sans", sans-serif;
+        text-indent: 10px;
+        /* border:solid white; */
+        height: 60px;
+        width: 230px;
+        font-size: 30px;
+        transform: translate(-630px, 480px);
+        text-align: center;
+        align-content: center;
+      }
+      .img2 {
+        /* display: flex;
+        flex-wrap: wrap; */
+        width: 20px;
+        height: 30px;
+        transform: translate(-10px, 5px);
+      }
+      .download {
+        /* display: flex;
+        flex-wrap: wrap; */
+        background-color: white;
+        color: black;
+        font-family: "fira sans", sans-serif;
+        text-align: 10px;
+        height: 60px;
+        width: 230px;
+        font-size: 30px;
+        text-align: center;
+        align-content: center;
+        transform: translate(650px, 273px);
+      }
+      .img3 {
+        /* display:flex;
+        flex-wrap:wrap; */
+        width: 25px;
+        height: 25px;
+        transform: translate(-10px, 0px);
+      }
+      .para1 {
+        display: flex;
+        flex-wrap: wrap;
+        /* border:1px solid black; */
+        width: 97vw;
+        height: 130vh;
+        background-image: url("images/pattern_bg.png");
+      }
+      #feat {
+        display: flex;
+        flex-wrap: wrap;
+        color: white;
+        font-size: 50px;
+        font-family: "fira sans", sans-serif;
+        transform: translate(500px, 20px);
+        
+      }
+      .dot1 {
+        color: white;
+        font-size: 50px;
+        transform: translate(480px, 55px);
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .dot2 {
+        color: white;
+        font-size: 50px;
+        transform: translate(524px, 55px);
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .main_box {
+        display: flex;
+        flex-wrap: wrap;
+        /* border:1px solid black; */
+        flex-direction: column;
+        height: 400px;
+        width: 94vw;
+        margin-left: 15px;
+        justify-content: space-evenly;
+        background-color: silver;
+        transform: translate(0px, -50px);
+      }
+      .box {
+        display: flex;
+        flex-wrap: wrap;
+        /* border:1px solid black; */
+        width: 280px;
+        height: 360px;
+        background-color: white;
+        margin-left: 10px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        line-height: 35px;
+        font-family: "fira sans", sans-serif;
+      }
+      .box:hover {
+        color: white;
+        background-color: lightskyblue;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        transition: 1s;
+      }
+      .para2{
+        border:1px solid black;
+        display:flex;
+        flex-wrap:wrap;
+        width:97vw;
+        height:300vh;
+        background-image:url("images/pattern_bg.png");
+      }
+      .page3{
+        display:flex;
+        flex-wrap:wrap;
+        /* border:1px solid black; */
+        width:97vw;
+        height:900px;
+        background-image: url("images/download_background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      #download2{
+        display:flex;
+        flex-wrap:wrap;
+        font-size:50px;
+        font-family: "fira sans", sans-serif;
+        color:white;
+        transform:translate(500px,100px);
+
+      }
+      .dot3{
+        color:white;
+        font-size:50px;
+        display:flex;
+        flex-wrap:wrap;
+        transform:translate(495px,85px);
+      }
+      .dot4{
+        color:white;
+        font-size:50px;
+        display:flex;
+        flex-wrap:wrap;
+        transform:translate(505px,85px);
+      }
+      .A{
+        font-size:20px;
+        font-family: "fira sans", sans-serif;
+        color:white;
+        line-height:40px;
+        transform:translate(100px,200px);
+      }
+      .B{
+        font-size:100px;
+        font-family: "fira sans", sans-serif;
+        color:white;
+        transform:translate(400px,-40px);
+      }
+      .C{
+        font-size:20px;
+        font-family: "fira sans", sans-serif;
+        color:white;
+        transform:translate(-20px,230px);
+      }
+      .D{
+        transform:translate(-350px,350px);
+      }
+      #download3{
+        display:flex;
+        flex-wrap:wrap;
+        font-size:50px;
+        font-family: "fira sans", sans-serif;
+        color:white;
+        transform:translate(500px,-120px);
+
+      }
+      .dot5{
+        color:white;
+        font-size:50px;
+        display:flex;
+        flex-wrap:wrap;
+        transform:translate(485px,-138px);
+      }
+      .dot6{
+        color:white;
+        font-size:50px;
+        display:flex;
+        flex-wrap:wrap;
+        transform:translate(520px,-135px);
+      }
+      .E{
+        color:white;
+        display:flex;
+        flex-wrap:wrap;
+        font-size:20px;
+        font-family: "fira sans", sans-serif;
+        transform:translate(180px,-30px)
+      }
+      .F{
+        color:white;
+        display:flex;
+        flex-wrap:wrap;
+        font-size:20px;
+        font-family: "fira sans", sans-serif;
+        transform:translate(-130px,10px);
+      }
+      .G{
+        color:white;
+        display:flex;
+        flex-wrap:wrap;
+        font-size:20px;
+        font-family: "fira sans", sans-serif;
+        transform:translate(-330px,45px);
+      }
+      .input1{
+        display:flex;
+        flex-wrap:wrap;
+        transform:translate(380px,-100px);
+        width:500px;
+        height:40px;
+        background-color: transparent;
+        /* padding-left:50px; */
+        text-align:center;
+        border-bottom: 5px solid white;
+ 
+        
+      }
+      .input2{
+        display:flex;
+        flex-wrap:wrap;
+        transform:translate(380px,-60px);
+        width:500px;
+        height:40px;
+        background-color:transparent;
+        border-bottom:5px solid white;
+        text-align:center;
+        
+      }
+      .input3{
+        display:flex;
+        flex-wrap:wrap;
+        width:230px;
+        height:50px;
+        background-color:cadetblue;
+        justify-content:center;
+        align-items:center;
+        color:white;
+        font-size:20px;
+        font-family: "fira sans", sans-serif;
+        transform:translate(665px,30px);
+        border-bottom:5px solid white;
+       
+      }
+      .input4{
+        display:flex;
+        flex-wrap:wrap;
+        /* opacity:0.5; */
+        transform:translate(380px,0px);
+        justify-content:center;
+      align-content:center;
+        /* color:white; */
+        font-size:13px;
+        border-bottom:5px solid white;
+        background-color:transparent;
+        text-align:center;
+        
+      }
+      .input3:hover{
+        background-color:black;
+      }
+      a{
+        text-decoration: none;
+        color:black;
+        
+
+      }
+      .page5{
+        border:1px solid white;
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction:column;
+        color:black;
+        gap:25px; 
+        transform:translate(950px,-3080px);
+        width:200px;
+        height:300px;
+        font-size:20px;
+        justify-content:center;
+        align-items:center;
+        font-family: "fira sans", sans-serif;
+        background-color:white;
+        border-top-right-radius:5px;
+        border-top-left-radius:5px;
+        border-bottom-right-radius:5px;
+        border-bottom-left-radius:5px;
+        transition: background-color.2s;
+      }
+      .sai{
+        width:50px;
+        height:50px;
+        transform:translate(100px,-130px);
+        
+      }
+      .company{
+        /* border:solid black; */
+        width:300px;
+        transform:translate(500px,120px);
+        font-size:20px;
+      }
+     
+       
+      
+      .wish1{
+        transform:translate(390px,-60px);
+      }
+      .wish2{
+        transform:translate(390px,-16px);
+      }
+      .wish3{
+        transform:translate(390px,50px);
+      }
+      .class{
+            display:flex;
+            flex-wrap:wrap;
+            gap:60px;
+            /* transform:translate(0px,-400px); */
+            /* border:solid black; */
+            position:relative;
+            top:400px;
+            left:-100px;
+        }
+        .identity{
+            display:flex;
+            flex-wrap:wrap;
+            /* border:solid black; */
+            width:60px;
+            height:60px;
+        }
+        
+        
+      
+    </style>
+  </head>
+  <body>
+    <div class="page1">
+      <img class="img1" src="images/mobile2.png" />
+      <div class="app">APP</div>
+      <div class="name">Your App Name</div>
+      <div class="Text">
+        This is an app landing Templatemo. Credits go to<br />Bootstrap,
+        stocksnap.io for images, subtlepatterns for<br />background patterns.
+      </div>
+      <div class="Features">
+        <a href="#feat"><img class="img2" src="images/menu.png" />Features</a>
+      </div>
+      <div class="download">
+        <a href="#download2"><img class="img3" src="images/download1.jpg" />Download</a>
+      </div>
+     
+    </div>
+    <div class="page1"></div>
+
+    <div class="para1">
+      <div class="dot1">...</div>
+      <p id="feat">Features</p>
+      <div class="dot2">...</div>
+      <div class="main_box">
+        <div class="box"><img class="sai" src="images/music.png">
+          Lorem ipsum dolor sit amet,<br />consectetur adipiscing elit, sed<br />do
+          eiusmod tempor incididunt<br />ut labore et dolore magna<br />aliqua.
+          Ut enim ad.
+        </div>
+        <div class="box"><img class="sai" src="images/leaf.png">
+          Quis nosteud exercitation<br />
+          ullamco laboris nisi ut aliquip.<br />
+          Duis aute irure dolor in <br />reprehenderit in voluptate <br />velit
+          esse.
+        </div>
+        <div class="box"><img class="sai" src="images/ship.png">
+          Cillum dolore eu fugiat nulla<br />pariatur. Excepteur sint<br />occaecat
+          cupidatat non<br />proident, sunt in culpa qui<br />officia deserut.
+        </div>
+        <div class="box"><img class="sai" src="images/trophy.png">
+          Lorem ipsum dolor sit amet,<br />consectetur adipiscing elit sed<br />do
+          eiusmod tempor incididunt<br />ut labore et dolore magna<br />aliqua.
+          Ut enim ad.
+        </div>
+      </div>
+    </div>
+    <div class="para2">
+    <div class="page3">
+        <div class="dot3">...</div>
+        <div id="download2">Download</div>
+        <div class="dot4">...</div>
+        <p class="A">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do<br>
+             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut<br> enim 
+             ad minim veniam, quis nostrud exercitation.</p>
+             <p class="B">15,050,500</p>
+             <p class="C">Over 15 millions user on Google play store</p>
+             <img class="D" src="images/download_btn.png" width="300" height="80">
+    </div>
+    <!-- <div class="page3"> -->
+        <div class="dot5">...</div>
+        <div id="download3">Contact</div>
+        <div class="dot6">...</div>
+        <p class="E"><img src="images/location.png" width="30" height="30">1234 Lincoln Way, San Francisco, California</p>
+        <p class="F"><img src="images/mail2.png" width="30" height="30">Email: info@company.com</p>
+        <p class="G" > <img src="images/phone2.png" width="20" height="20">Phone: 010-020-0340</p>
+        <form>
+            <img class="wish1" src="images/person.png" width="30" height="30"><input class="input1" type="text" name="name" id="name" placeholder="Name">
+            <img class="wish2" src="images/rate.png" width="30" height="30"><input class="input2" type="mailto" name="name" id="name" placeholder="Email">
+            <img class="wish3" src="images/mail.png" width="30" height="30"> <textarea class="input4" cols="67" rows="5" placeholder="Message"></textarea>
+            <button class="input3" type="button">Send</button>
+        </form>
+        <div class="class">
+          <img class="identity" src="images/facebook.png">
+          <img class="identity" src="images/twitter.png">
+          <img class="identity" src="images/youtube.png">
+          <img class="identity" src="images/instagram.png">
+      </div>
+
+    </div>
+</div>
+ <!-- <div class="page5">
+        <div>Home</div>
+        <a href="#feat"><div>Features</div></a>
+        <a href="#download2"><div>Download</div></a>
+        <div>Fan Page</div>
+        <div>Elements</div>
+        <a href="#download3"><div>Contact</div></a>
+
+      </div>
+       -->
+      
+      <div class="company">Copyright © 2084 <a href="https://templatemo.com/templates/templatemo_474_app_landing/index.html#">Company Name</a></div>
+
+     
+  </body>
+</html>
